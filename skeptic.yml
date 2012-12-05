@@ -1,0 +1,28 @@
+1:
+  lines_per_method: 5
+  line_length: 80
+  max_nesting_depth: 2
+  methods_per_class: 4
+  no_semicolons: true
+  no_trailing_whitespace: true
+2:
+  lines_per_method: 4
+  line_length: 80
+  max_nesting_depth: 1
+  methods_per_class: 8
+  no_semicolons: true
+  no_trailing_whitespace: true
+3:
+  lines_per_method: 10
+  line_length: 100
+  max_nesting_depth: 2
+  methods_per_class: 8
+  no_semicolons: true
+  no_trailing_whitespace: true
+4:
+  lines_per_method: 4
+  line_length: 100
+  max_nesting_depth: 2
+  methods_per_class: 10
+  no_semicolons: true
+  no_trailing_whitespace: true
