@@ -92,9 +92,6 @@ describe "Collection" do
     ]
   end
 
-  it "does not mutate when filtered"
-  it "does not mutate when adjoined"
-
   SONGS = <<END
 Fields of Gold
 Sting
