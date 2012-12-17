@@ -57,18 +57,16 @@ class Collection
 end
 
 module Criteria
-  class << self
-    def name(name)
-      Criterion.new { |song| song.name == name }
-    end
+  def name(name)
+    Criterion.new { |song| song.name == name }
+  end
 
-    def artist(artist)
-      Criterion.new { |song| song.artist == artist }
-    end
+  def artist(artist)
+    Criterion.new { |song| song.artist == artist }
+  end
 
-    def album(album)
-      Criterion.new { |song| song.album == album }
-    end
+  def album(album)
+    Criterion.new { |song| song.album == album }
   end
 end
 
