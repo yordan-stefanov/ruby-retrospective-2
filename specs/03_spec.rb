@@ -1,5 +1,5 @@
 require 'treetop'
-Treetop.load 'parser'
+Treetop.load File.expand_path('../parser', __FILE__)
 
 describe "Expressions" do
   def parse(input)
