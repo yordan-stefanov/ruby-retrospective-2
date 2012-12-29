@@ -1,11 +1,14 @@
 class Integer
     def prime_divisors
-        return (-self).prime_divisors if self < 0
-        return nil if [0,1].include? self
-        def prime? n
-            not (2...n).map {|x| n % x}.include? 0
+        is_prime = ->( number ) do
+            2.upto( number - 1 ).all? { |divisor| number % divisor != 0 }
         end
-        (2...self).to_a.delete_if { |x| not prime? x or not self % x == 0 }
+        number = abs
+        2.upto( number - 1 ).each_with_object [] do | divisor, prime_divisors |
+            prime_divisors << divisor if number % divisor == 0 and divisor.prime?
+        end
+        # or using one line solution: abs.prime_division.map( &:first ).select { |number| number != abs }
+        # but it requires "Prime"
     end
 end
 
