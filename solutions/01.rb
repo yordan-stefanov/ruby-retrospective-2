@@ -15,7 +15,7 @@ end
 
 class Range
   def fizzbuzz
-    self.map &->( element ) do
+    map &->( element ) do
       return :fizzbuzz if element % 15 == 0
       return :fizz if element % 3 == 0
       return :buzz if element % 5 == 0
