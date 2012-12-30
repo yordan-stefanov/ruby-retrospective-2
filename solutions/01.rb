@@ -23,3 +23,12 @@ class Range
     end
   end
 end
+
+class Hash
+  def group_values
+    each_with_object( {} ) do | (key, value), new_hash |
+      new_hash[value] ||= []
+      new_hash[value] << key
+    end
+  end
+end
