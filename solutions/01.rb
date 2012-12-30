@@ -32,3 +32,9 @@ class Hash
     end
   end
 end
+
+class Array
+  def densities
+    map { |element| count element }
+  end
+end
